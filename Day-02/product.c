@@ -10,4 +10,5 @@ int main()
     }
     printf("Product of digits: %d", product);
     return 0;
+    
 }

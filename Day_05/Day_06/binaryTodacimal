@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main() {
+    int n;
+    printf("Enter a binary number: ");
+    scanf("%d", &n);
+    int decimal = 0, base = 1;
+    while (n > 0) {
+        int last_digit = n % 10;
+        decimal += last_digit * base;
+        n = n / 10;
+        base = base * 2;
+    }
+    printf("Decimal representation: %d\n", decimal);
+    return 0;
+}
